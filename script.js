@@ -6,67 +6,67 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
+        enunciado: "Você está começando a cultivar morangos em seu jardim e se depara com um novo tipo de fertilizante que promete melhorar a qualidade dos frutos. Qual é o seu primeiro pensamento?",
         alternativas: [
             {
-                texto: "Isso é assustador!",
-                afirmacao: "No início ficou com medo do que essa tecnologia pode fazer. "
+                texto: "Isso é arriscado!",
+                afirmacao: "No início, você ficou preocupado com os possíveis efeitos adversos desse novo fertilizante."
             },
             {
-                texto: "Isso é maravilhoso!",
-                afirmacao: "Quis saber como usar IA no seu dia a dia."
+                texto: "Isso é promissor!",
+                afirmacao: "Você ficou animado para experimentar o fertilizante e ver como ele poderia melhorar a qualidade dos morangos."
             }
         ]
     },
     {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial, uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
+        enunciado: "Após aprender sobre esse novo fertilizante, seu instrutor de horticultura pede que você faça um relatório sobre o uso de fertilizantes na produção de morangos. Qual atitude você toma?",
         alternativas: [
             {
-                texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
-                afirmacao: "Conseguiu utilizar a IA para buscar informações úteis."
+                texto: "Utiliza uma ferramenta de busca na internet para encontrar informações relevantes sobre fertilizantes e técnicas de cultivo de morangos, e explica de forma clara no relatório.",
+                afirmacao: "Conseguiu utilizar as informações disponíveis na internet para criar um relatório detalhado e útil sobre o uso de fertilizantes."
             },
             {
-                texto: "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-                afirmacao: "Sentiu mais facilidade em utilizar seus próprios recursos para escrever seu trabalho."
+                texto: "Escreve o relatório com base nas conversas que teve com colegas, algumas pesquisas na internet e seus conhecimentos prévios sobre cultivo de morangos.",
+                afirmacao: "Sentiu que utilizar seus próprios recursos e experiências foi mais eficaz para escrever o relatório."
             }
         ]
     },
     {
-        enunciado: "Após a elaboração do trabalho escrito, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado: "Depois de entregar o relatório, o instrutor organiza um debate para discutir os diferentes métodos de cultivo de morangos e o impacto dos fertilizantes. Como você se posiciona nesse debate?",
         alternativas: [
             {
-                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-                afirmacao: "Vem impulsionando a inovação na área de IA e luta para abrir novos caminhos profissionais com IA."
+                texto: "Defende a ideia de que o uso de fertilizantes pode aumentar a produtividade e melhorar a qualidade dos morangos, desde que utilizado corretamente.",
+                afirmacao: "Acredita que o uso de fertilizantes é essencial para otimizar a produção e está disposto a compartilhar suas experiências para melhorar a prática do cultivo."
             },
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao: "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética."
+                texto: "Preocupa-se com o uso excessivo de fertilizantes e defende métodos mais naturais e sustentáveis de cultivo de morangos para proteger o meio ambiente.",
+                afirmacao: "Sua preocupação com o impacto ambiental motivou você a promover práticas de cultivo mais ecológicas e a educar outros sobre alternativas sustentáveis."
             }
         ]
     },
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "Ao final do debate, você precisa criar um cartaz que represente suas ideias sobre o uso de fertilizantes no cultivo de morangos. E agora?",
         alternativas: [
             {
-                texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao: "Notou também que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes."
+                texto: "Criar um cartaz usando uma ferramenta de design simples como o Paint.",
+                afirmacao: "Percebeu que muitas pessoas não estão familiarizadas com ferramentas de design e decidiu compartilhar suas habilidades em design básico para iniciantes."
             },
             {
-                texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
-                afirmacao: "Acelerou o processo de criação de trabalhos utilizando geradores de imagem e agora consegue ensinar pessoas que sentem dificuldades em desenhar manualmente como utilizar também!"
+                texto: "Criar um cartaz usando um gerador de gráficos online.",
+                afirmacao: "Facilitou o processo de criação do cartaz utilizando ferramentas digitais e agora pode ajudar outros a usar essas ferramentas para suas próprias apresentações."
             }
         ]
     },
     {
-        enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda da IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz? ",
+        enunciado: "Você e seu grupo têm um projeto sobre técnicas de cultivo de morangos para entregar na próxima semana. O progresso está um pouco atrasado, e uma pessoa do seu grupo decidiu usar informações de um gerador de conteúdo para completar o projeto. O problema é que o material está muito parecido com o que foi gerado pelo software. O que você faz?",
         alternativas: [
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-                afirmacao: "Infelizmente passou a utilizar a IA para fazer todas suas tarefas e agora se sente dependente da IA para tudo."
+                texto: "Usar o conteúdo gerado como está pode ser uma forma eficiente de completar o projeto, então não vê problema em utilizá-lo.",
+                afirmacao: "Acabou dependendo muito de ferramentas automatizadas e agora sente que precisa de mais envolvimento pessoal em seus projetos."
             },
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-                afirmacao: "Percebeu que toda IA reproduz orientações baseadas na empresa que programou e muito do que o chat escrevia não refletia o que pensava e por isso sabe que os textos gerados pela IA devem servir como auxílio e não resultado final. "
+                texto: "Embora as ferramentas digitais sejam úteis, é importante revisar o material e adicionar suas próprias observações para garantir que o projeto reflita suas ideias e conhecimento pessoal.",
+                afirmacao: "Reconheceu que as ferramentas digitais são um bom ponto de partida, mas que o envolvimento pessoal e a revisão são cruciais para garantir a originalidade e a qualidade do projeto."
             }
         ]
     },
